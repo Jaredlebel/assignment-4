@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-wdith; scale: 1;}
+@-ms-viewport { width: device-wdith; scale: 1;}
+@-webkit-viewport { width: device-wdith; scale: 1;}
+@-o-viewport { width: device-wdith; scale: 1;}
+@viewport { width: device-wdith; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html, body {
+	font-family: sans-serif;
+	line-height: 1.3rem;
+}
+
+main {
+	width: 90%;
+	margin: 1rem auto 6rem;
+}
+
+.home {
+	width: 90%;
+	margin: 1rem auto 45rem;
+}
+
+.logo {
+	background-image: url(../images/logo.svg);
+	height: 2.5rem;
+	margin-top: .5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#content {
+	height: 30rem;
+}
+
+h1 {
+	color: #333;
+	line-height: 2.5rem;
+	font-size: 2.45rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+header {
+	background-color: #fff;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	width: 100%;
+}
+
+nav {
+	text-align: center;
+	margin-top: .5rem;
+}
+
+nav a {
+	color: #333;
+	text-decoration: none;
+	font-size: .75rem;
+}
+
+nav a:hover {
+	color: #999;
+	font-style: italic;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: .5rem .75rem .5rem;
+	font-size: 12px;
+}
+
+img {
+	width: 100%;
+	margin-top: 3.5rem;
+}
+
+p {
+	position: relative;
+	line-height: 1.5rem;
+	text-align: center;
+	margin: 0.5rem 0;
+}
+
+p a {
+	color: #999;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.schedule a {
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+
+.schedule ul li {
+	padding: .5rem;
+}
+
+.btn {
+	display: block;
+	background-color: #999;
+	padding: .5rem;
+	text-align: center;
+	margin: 0 5%;
+	border-bottom: #ccc dotted 1px;
+}
+
+.button-content ul li {
+	background-color: #CCC;
+	border-bottom: #999 dotted 1px;
+	margin: 0 5%;
+	text-align: center;
+}
+
+.button-content {
+	display: none;	
+}
+
+.button-content[data-state="expanded"] {
+	display: block;	
+}
+
+.contact li {
+	font-size: .75rem;
+	text-align: center;
+}
+
+.contact a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:bolder;	
+	color: #999;
+}
+
+.box{
+	text-align: center;
+}
+
+.box li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	color: #FFF;
+	background-color: #333;
+	padding: .5rem;
+	margin: 2rem .55rem .55rem 0;
+	width: 13rem;
+	border-radius: 20px;
+}
+
+@media only screen and (min-width: 25em) {
+	
+	.logo {
+	background-image: url(../images/logo.svg);
+	height: 2.5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	float: left;
+	width: 10rem;
+	}
+
+	.nav {
+		overflow: auto;
+		float: right;
+		width: 20rem;
+		right: 0;
+	}
+	
+	.nav ul {
+		float: right;
+	}
+
+	.nav ul li {
+		display: inline-block;
+		float: right;
+	}
+	
+	p {
+		text-align: left;
+	}
+	
+	.btn {
+		margin: 0 20%;
+	}
+	
+	.button-content ul li {
+		margin: 0 20%;
+	}
+	
+}
+
+.social {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social li {
+	text-align: center;
+	display: inline-block;
+	width: 15%;
+}
+
+@media only screen and (min-width: 40em) {
+	
+	main {
+		width: 90%;
+	}
+	
+	.logo {
+		margin: 0 15%;
+	}
+		
+	img {
+		width: 75%;
+		margin: 3.5rem 15% 0;
+	}
+	
+	h1 {
+		text-align: left;
+		width: 90%;
+		margin: 0 11%;
+	}
+	
+	p {
+		width: 85%;
+		margin: 0.5rem 11%;
+	}
+	
+	.btn {
+		display: none;
+	}
+	
+	.button-content ul li {
+		display: none;
+	}
+	
+	hr {
+		width: 85%;
+		margin: 1rem 11%;
+	}
+	
+	.contact li{
+		text-align: left;
+		width: 70%;
+		margin: 0 11%;
+	}
+	
+	.social {
+		width: 80%;
+	}
+	
+}
+
+footer {
+	background-color: #ccc;
+	width: 100%;
+	padding: .5rem;
+}
+
+footer p {
+	color: #FFF;
+	text-align: center;
+}
+
+.logo-footer {
+	background-image: url(../images/logo.svg);
+	height: 1.5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
